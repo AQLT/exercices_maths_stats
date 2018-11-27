@@ -29,15 +29,18 @@ Notons :
 $$
 H_n = \sum_{k=1}^n\frac{1}{k} ,
 \quad
+A_n = \sum_{k=1}^n\frac{(-1)^{k-1}}{k}
+$$
+Et :
+$$
 G_n = \sum_{k=1}^n\frac{1}{k^2},
-\quad
-A_n = \sum_{k=1}^n\frac{(-1)^{k-1}}{k},
 \quad
 B_n= \sum_{k=1}^n\frac{(-1)^{k}}{k^2}
 $$
+
 Montrer que :  
 
-1. $\underset{n\to+\infty}{\lim} H_n = +\infty$ et $\underset{n\to+\infty}{\lim} G_n = \ln(2)$
+1. $\underset{n\to+\infty}{\lim} H_n = +\infty$ et $\underset{n\to+\infty}{\lim} A_n = \ln(2)$
 2. Justifier la convergence de $G_n$ et $B_n$ et calculer $\underset{n\to+\infty}{\lim} B_n$ (sachant que $\sum_{k=1}^{+\infty}\frac{1}{k^2} = \frac{\pi^2}{6}$)
 
 **Indications** :  
@@ -52,7 +55,7 @@ Justifier l'existence et calculer :
 $$
 \int_{0}^{+\infty} (x^2 +6x +3)\exp(-x)\mathrm{d}x
 $$
-
+(Réponse : -3)
 
 # Statistiques
 
