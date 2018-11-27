@@ -1,5 +1,5 @@
 ---
-title: "Exercices de rÃ©vision"
+title: "Exercices de révision"
 output:
   pdf_document:
     toc: yes
@@ -15,17 +15,40 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Analyse
-## Exercice : calcul de périodicité
+## Calcul de périodicité
 
-Calculer la périodicité de la fonction $f\colon x \mapsto \cos(5\pi t) + \sin (\frac{3}{2}\pi t)$
+Calculer la périodicité de la fonction $$f\colon x \mapsto \cos(5\pi t) + \sin (\frac{3}{2}\pi t)$$
 
-## Exercice : factorisation
+## Factorisation $a^n -b^n$
 
 Factoriser $a^n -b^n$ pour $n\in\mathbb N$
 
-## Exercice : calcul d'un intégrale
+## Série harmonique et série harmonique alternée
+Notons :
 
-Justifiez l'existence et calculer :
+$$
+H_n = \sum_{k=1}^n\frac{1}{k} ,
+\quad
+G_n = \sum_{k=1}^n\frac{1}{k^2},
+\quad
+A_n = \sum_{k=1}^n\frac{(-1)^{k-1}}{k},
+\quad
+B_n= \sum_{k=1}^n\frac{(-1)^{k}}{k^2}
+$$
+Montrer que :  
+
+1. $\underset{n\to+\infty}{\lim} H_n = +\infty$ et $\underset{n\to+\infty}{\lim} G_n = \ln(2)$
+2. Justifier la convergence de $G_n$ et $B_n$ et calculer $\underset{n\to+\infty}{\lim} B_n$ (sachant que $\sum_{k=1}^{+\infty}\frac{1}{k^2} = \frac{\pi^2}{6}$)
+
+**Indications** :  
+
+- Montrer que $H_{2n}-H_n \underset{n\to+\infty}\to \ln(2)$ 
+- Décomposer les ordres pairs et impairs de $A_{2n}$, $\displaystyle P_{2n} = \sum_{\underset{k \text{ pair}}{k=1}}^{2n} \frac{(-1)^{k-1}}{k}$ et $\displaystyle I_{2n} = \sum_{\underset{k \text{ impair}}{k=1}}^{2n} \frac{(-1)^{k-1}}{k}$, pour montrer que $A_{2n} = H_{2n}-H_n$
+
+
+## Calcul d'une intégrale
+
+Justifier l'existence et calculer :
 $$
 \int_{0}^{+\infty} (x^2 +6x +3)\exp(-x)\mathrm{d}x
 $$
@@ -39,3 +62,15 @@ $$
 \int_{-\infty}^{+\infty} \exp(-ax^2+bx+c)\mathrm{d}x = \sqrt{\frac{\pi}{a}}\exp\left(\frac{b^2}{a} + c\right)
 $$
 Sachant que $\displaystyle\int_{-\infty}^{+\infty} \exp(-x^2)\mathrm{d}x = \sqrt{\pi}$
+
+## Équivalences intégrales infinies
+
+Soit $f$ une fontion $C^1$ sur $[0,+\infty[$, continue, positive, décroissante.
+Montrer que : si $\int_0^{+\infty}f(x) \mathrm{d}x$ converge alors $\lim_{x\to+\infty}xf(x) = 0$
+
+
+**Solution :**
+
+Notons $F(x) = \int_0^x f(t)\mathrm{d}t$. On a :
+$$\int_{x/2}^xf(t)\mathrm{d}t = F(x)-F(x/2)\geq \int_{x/2}^x f(x)\mathrm{d}t = \frac{xf(x)}{2} \geq 0$$
+D'où le résultat voulu d'après le théorème des gendarmes
