@@ -57,6 +57,61 @@ $$
 $$
 (Réponse : -3)
 
+## Exercices oraux
+
+### Exercice 1
+
+Soit ${(u_n)}_n$ une suite définie de la façon suivante :
+$$
+u_{n+1} = u_n + \frac{1}{n^\alpha u_n}\text{ avec }\alpha>0\text{ et } u_1>0
+$$
+
+1) Nature de la suite ${(u_n)}_n$
+
+2) Trouver un équivalent de :  
+  * $l - u_n$ quand $u_n$ converge vers $l$  
+  
+  * $u_n$ quand $u_n$ diverge
+    
+
+# Algèbre
+
+## Espaces vectoriels
+
+### Réunion de sev (18.10)
+
+Soient $E$ un $\mathbb K-$ev, $A$, $B$ deux sev de $E$. Montrer que les deux propriétés suivantes sont équivalentes :
+
+1. $A \cup B$ est un sev de $E$
+
+2. $A \subset B$ ou $B \subset A$
+
+### Inégalité sur des carrés de dimensions de sev (18.12)
+
+Soient $E$ un $\mathbb K-$ev de dimension finie, $E, $F$ deux sev de $E$. Montrer :
+$\geq$
+$$
+(\dim (F+G))^2 + (\dim (F\cap G))^2 \geq (\dim (F))^2 +(\dim (G))^2 
+$$
+
+## Exercices oraux
+
+### Exercice oral improvisé
+
+Soient $A$, $B\in \mathcal M_n(\mathbb R)$  orthogonales, $\alpha \in ]0,1[$. 
+
+Montrer que si $\alpha A + (1-\alpha) B$ est orthogonale alors $A = B$
+
+### Exercice oral improvisé
+
+Soit $u \colon E \to E$ où $E$ est un espace vectoriel euclidien.
+
+On suppose qu'il existe $\lambda>0$ et $\mu < 0$ deux valeurs propre de $u$.
+
+Montrer qu'il existe $x\in E, \,x\ne 0$ tels que$\langle u(x) \mid x\rangle=0$
+
+
+
 # Statistiques
 
 ## Exercice : calcul d'intégrales
@@ -77,3 +132,21 @@ Montrer que : si $\int_0^{+\infty}f(x) \mathrm{d}x$ converge alors $\lim_{x\to+\
 Notons $F(x) = \int_0^x f(t)\mathrm{d}t$. On a :
 $$\int_{x/2}^xf(t)\mathrm{d}t = F(x)-F(x/2)\geq \int_{x/2}^x f(x)\mathrm{d}t = \frac{xf(x)}{2} \geq 0$$
 D'où le résultat voulu d'après le théorème des gendarmes
+
+## Exercices oraux
+
+### Exercice 1
+
+Soient $a>0, \, r>0$. On dit que $T \sim \mathcal P(a,r)$ lorsque la densité de $T$ est :
+$$
+f_T(x) = \begin{cases}
+\frac{ar^a}{(x+r)^{a+1}} &\text{ si }x>0 \\
+0&\text{ si }x\leq 0
+\end{cases}
+$$
+Soient $a,\, b,\, c$ trois réels strictements positifs et $A,\, B,\, C$ trois variables aléatoires indépendantes telles que $A\sim \mathcal P(a,r)$, $B\sim \mathcal P(b,r)$ et $C\sim \mathcal P(c,r)$.  
+Notons $X=\min(B,\,C)$, $Y=\min(A,\,C)$ et $Z=\min(A,\,B)$
+
+1. Trouver la loi de $X$, $Y$ et $Z$.  
+2. Calculer $\mathbb P(X=Y)$  
+3. Soit ${(U_n)}_n$ une suite de variables aléatoires telles que $U_n \sim \mathcal P\big(n,\frac{n}{\lambda}\big)$. Convergence en loi de ${(U_n)}_n$ ?
